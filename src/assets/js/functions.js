@@ -2844,7 +2844,7 @@ $(document).ready(function() {
       updateNavs(nextPos);
       updateContent(curPos, nextPos, lastItem);
     }
-    $("#nav-menu").toggleClass("open");
+    $("#nav-menu").removeClass("open");
   });
 
   $(".cta").click(function() {
@@ -2911,7 +2911,7 @@ $(document).ready(function() {
 
   // sync side and outer navigations
   function updateNavs(nextPos) {
-    $(".side-nav, .outer-nav")
+    $(".side-nav, .outer-nav, .main-nav-list")
       .children()
       .removeClass("is-active");
     $(".side-nav")
@@ -2919,6 +2919,10 @@ $(document).ready(function() {
       .eq(nextPos)
       .addClass("is-active");
     $(".outer-nav")
+      .children()
+      .eq(nextPos)
+      .addClass("is-active");
+    $(".main-nav-list")
       .children()
       .eq(nextPos)
       .addClass("is-active");
@@ -2967,10 +2971,12 @@ $(document).ready(function() {
 
   function outerNav() {
     $(".header--nav-toggle").click(function() {
+      /*
       $(".perspective").addClass("perspective--modalview");
       setTimeout(function() {
         $(".perspective").addClass("effect-rotate-left--animate");
       }, 25);
+      */
       $(".outer-nav, .outer-nav li, .outer-nav--return").addClass("is-vis");
     });
 
@@ -3149,8 +3155,8 @@ $(document).ready(function() {
   workSlider();
   transitionLabels();
 
-  // $(".toggle-nav-menu").click(function() {
-  //   $(this).toggleClass("active");
-  //   $("#nav-menu").toggleClass("open");
-  // });
+  $(".header--nav-toggle").click(function() {
+    $(this).toggleClass("active");
+    $("#nav-menu").toggleClass("open");
+  });
 });
