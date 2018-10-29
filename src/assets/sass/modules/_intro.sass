@@ -1,3 +1,12 @@
+svg
+  position: absolute
+  display: flex
+  flex-flow: column
+  align-self: center
+  width: 150%
+  height: auto
+  transform: translateX(-50%)
+
 .intro
   position: relative
   display: flex
@@ -12,7 +21,6 @@
 
   &--banner
     position: relative
-    height: 475px
 
     h1
       position: relative
@@ -24,6 +32,7 @@
       color: $white
       letter-spacing: .4rem
       margin-bottom: 1.875rem
+      text-shadow: 0 0 1rem rgba(255,255,255,0.2)
 
     h2
       font-weight: lighter
@@ -33,53 +42,55 @@
       margin: 0
       padding: 0
       line-height: .9
+      text-shadow: 0 0 1.2rem rgba(255,255,255,0.2)
+
 
     p
       font-weight: normal
-      font-size: 1rem
-      color: $white
+      font-size: .9rem
+      color: $black
       padding: 0
       margin: 0
-      letter-spacing: .125rem
+      letter-spacing: .07rem
       margin-bottom: 3.25rem
       max-width: 55rem
+      text-shadow: 0 0 .2rem rgba(0,0,0,0.1)
+
 
 
     button
       position: relative
-      padding: 5px 17px 5px 12px
-      font-weight: 700
-      text-transform: uppercase
+      display: flex
+      flex-flow: row
+      padding: .2rem .1rem
+      font-weight: bold
+      font-size: 1rem
+      letter-spacing: .3rem
+      color: $highlight
       background-color: transparent
+      text-transform: uppercase
       border: none
-
-      .btn-background
-        position: absolute
-        top: 0
-        left: 23px
-        right: 0
-        height: 100%
-        background-color: $highlight
-        z-index: -1
-        transition: left .2s ease-in-out
-
-      &:hover
-        .btn-background
-          left: 0
-
-      &:focus
-        outline: none
+      opacity: .6
+      transition: .25s ease-in-out
 
       svg
         position: relative
-        left: 5px
-        width: 15px
-        fill: $white
+        left: .6rem
+        width: .95rem
+        height: auto
+        fill: $highlight
+        transition: .25s ease-in-out
 
-    img
-      position: absolute
-      bottom: 21px
-      right: -12px
+
+      &:hover
+        opacity: .9
+        text-shadow: 0 0 .3rem rgba(255,253,131,0.2)
+
+        svg
+          left: .875rem
+
+      &:focus
+        outline: none
 
   &--options
     display: flex
@@ -114,9 +125,6 @@
       h1
         font-size: 55px
 
-      img
-        width: 430px
-
     &--options
 
       & > a
@@ -134,9 +142,6 @@
 
       h1
         font-size: 44px
-
-      img
-        width: 330px
 
     &--options
       display: block
@@ -158,9 +163,6 @@
 
       h1
         font-size: 55px
-
-      img
-        display: none
 
 @media (max-width: 600px) and (max-height: 750px)
 

@@ -3149,8 +3149,8 @@ $(document).ready(function() {
   workSlider();
   transitionLabels();
 
-  $(".toggle-nav-menu").click(function() {
-    $(this).toggleClass("active");
-    $("#nav-menu").toggleClass("open");
-  });
+  // $(".toggle-nav-menu").click(function() {
+  //   $(this).toggleClass("active");
+  //   $("#nav-menu").toggleClass("open");
+  // });
 });
