@@ -3,9 +3,10 @@ svg
   display: flex
   flex-flow: column
   align-self: center
-  width: 150%
-  height: auto
-  transform: translateX(-50%)
+  width: auto
+  height: 100%
+  transform: translateX(15%)
+  overflow: visible !important
 
 .intro
   position: relative
@@ -32,7 +33,7 @@ svg
       color: $white
       letter-spacing: .4rem
       margin-bottom: 1.875rem
-      text-shadow: 0 0 1rem rgba(255,255,255,0.2)
+      text-shadow: 0 0 .6rem rgba(60,18,125,0.1)
 
     h2
       font-weight: lighter
@@ -42,19 +43,19 @@ svg
       margin: 0
       padding: 0
       line-height: .9
-      text-shadow: 0 0 1.2rem rgba(255,255,255,0.2)
+      text-shadow: 0 0 1rem rgba(60,18,125,0.1)
 
 
     p
       font-weight: normal
       font-size: .9rem
-      color: $black
+      color: $white
       padding: 0
       margin: 0
       letter-spacing: .07rem
       margin-bottom: 3.25rem
       max-width: 55rem
-      text-shadow: 0 0 .2rem rgba(0,0,0,0.1)
+      text-shadow: 0 0 .1rem rgba(60,18,125,0.1)
 
 
 
@@ -70,7 +71,7 @@ svg
       background-color: transparent
       text-transform: uppercase
       border: none
-      opacity: .6
+      opacity: .7
       transition: .25s ease-in-out
 
       svg
@@ -83,8 +84,8 @@ svg
 
 
       &:hover
-        opacity: .9
-        text-shadow: 0 0 .3rem rgba(255,253,131,0.2)
+        opacity: 1
+        text-shadow: 0 0 .2rem rgba(255,253,131,0.1)
 
         svg
           left: .875rem
