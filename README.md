@@ -1,35 +1,12 @@
-# CodeVember 2018 - Website
+# Florence
 
-This is the website for Codevember community challenge, 2018. A challenge to all creative coders to make something new over the month of November.
+A landing page template.
 
-This website was built using the [Global: HTML5 website template](http://buckymaler.com/global) found on github. This project was developed with HTML5, Sass, jQuery, and Hammer.js.
+* [Getting started](#getting-started)
 
-## Running Project:
+## Getting started
+* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
+* Next, use your command line to enter your project directory.
+* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
 
-1. Install sass [Getting Started with Sass](https://sass-lang.com/install).
-
-2. Then cd into your assets Directory.
-
-```cd/codeVember-Website/src/assets```
-
-3. Now watch the sass folder and build your css.
-
-```sass --watch sass:css --style compressed```
-
-4. Start Editing!
-
-## Running Project with Hot reloading (not necessary):
-
-1. Make sure the steps for sass are completed above, and your sass files are being watched.
-
-2. Then cs into your root folder for the project
-
-```cd/codeVember-Website```
-
-3. NPM Install
-
-```npm install```
-
-3. NPM start (this will watch for changes in the project's src folder. So it is watching for changes in the js and html files, and reloading the page as you are working on things, other than sass).
-
-```npm start```
+You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
