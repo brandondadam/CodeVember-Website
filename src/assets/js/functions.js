@@ -2845,6 +2845,7 @@ $(document).ready(function() {
       updateContent(curPos, nextPos, lastItem);
     }
     $("#nav-menu").removeClass("open");
+    $(".header--nav-toggle").removeClass("active");
   });
 
   $(".cta").click(function() {
