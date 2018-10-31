@@ -1,6 +1,7 @@
 .site-header {
     position: relative;
     padding: 24px 0;
+    z-index: 99999;
 }
 
 .site-header-inner {
@@ -47,4 +48,10 @@
         line-height: 16px;
         padding: 8px 24px;
     }
+}
+
+@include media('<=500px') {
+  .header-brand {
+    margin: 0 auto;
+  }
 }
