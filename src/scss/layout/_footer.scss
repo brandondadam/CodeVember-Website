@@ -44,8 +44,8 @@
 }
 
 .footer-disk-2 {
-  bottom: 20px;
-  right: -80px;
+  bottom: 0;
+  right: -180px;
 
   svg {
     transform-origin: 50% 0;
@@ -54,18 +54,17 @@
 }
 
 .footer-sphere-1 {
-  display: block;
-  left: 23px;
-  bottom: 264px;
+  left: 390px;
+  bottom: 110px;
 }
 
 .site-footer-inner {
   position: relative; /* To display all elements above the background color */
   display: flex;
   align-items: content;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding-top: 48px;
-  padding-bottom: 24px;
+  padding-bottom: 48px;
   justify-content: center;
 }
 
@@ -93,7 +92,7 @@
 .footer-copyright {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer-links,
@@ -135,18 +134,16 @@
 
   .footer-sphere {
     display: block;
-    bottom: 200px;
-    left: 180px;
   }
 
   .footer-disk-1 {
     bottom: -170px;
-    left: 265px;
+    left: 352px;
   }
 
   .footer-disk-2 {
-    bottom: 100px;
-    right: -185px;
+    bottom: 0;
+    right: -285px;
   }
 
   .site-footer-inner {

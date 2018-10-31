@@ -1,6 +1,4 @@
 .button {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
     display: inline-flex;
     @include font-size(7, mobile, true, false, true);
     @if ( get-font-size(7, desktop) != get-font-size(7, mobile) ) {
@@ -18,8 +16,8 @@
     border-radius: 2px;
     cursor: pointer;
     justify-content: center;
-    padding: 23px 25px;
-	  height: 60px;
+    padding: 16px 40px;
+	height: 48px;
     text-align: center;
     white-space: nowrap;
 
@@ -42,14 +40,33 @@
         right: 0;
         bottom: 0;
         left: 0;
-        box-shadow: 0 8px 48px rgba(color(primary, 1), .4);
+        box-shadow: 0 8px 48px rgba(color(primary, 1), .48);
         transition: box-shadow .15s ease;
     }
 
     &:hover {
 
         &::before {
-            box-shadow: 0 8px 48px rgba(color(primary, 1), .8);
+            box-shadow: 0 8px 48px rgba(color(primary, 1), .6);
+        }
+    }
+}
+
+.button-sm {
+    padding: 8px 24px;
+	height: 32px;
+
+    &.button-shadow {
+
+        &::before {
+            box-shadow: 0 4px 32px rgba(color(primary, 1), .48);
+        }
+
+        &:hover {
+
+            &::before {
+                box-shadow: 0 4px 32px rgba(color(primary, 1), .6);
+            }
         }
     }
 }
@@ -57,10 +74,6 @@
 .button-primary {
     color: color(typography, 1) !important;
     transition: background .15s ease;
-    font-size: .8rem;
-    color: #FFFFFF;
-    letter-spacing: .3rem;
-    z-index: 9999999;
 }
 
 .button-primary {
